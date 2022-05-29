@@ -31,7 +31,7 @@ public interface MixinBlockEntityRenderer {
 			Identifier beId = BlockEntityType.getId(blockEntity.getType());
 			String id = beId.toString();
 			
-			int result = ITERDMod.CONFIG_MAP.getOrDefault(id, -1);
+			int result = ITERDMod.CONFIG_MAP.getOrDefault(id, this.getRenderDistance());
 			
 			cir.setReturnValue(Vec3d.ofCenter(blockEntity.getPos()).isInRange(pos, (double) result));
 		}
