@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "iterd",
+  "version": "${version}",
+
+  "name": "Increased TE render distance",
+  "description": "Allows to change the render distance of tile entities",
+  "authors": [
+    "DerToaster"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/iterd/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "de.dertoaster.iterd.ITERDMod"
+    ]
+  },
+  "mixins": [
+    "iterd.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.18.1",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
